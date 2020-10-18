@@ -89,7 +89,7 @@ class TwitterListener(StreamListener):
 if __name__ == '__main__':
  
     # Authenticate using config.py and connect to Twitter Streaming API.
-    hash_tag_list = ["donal trump", "hillary clinton", "barack obama", "bernie sanders"]
+    hash_tag_list = ["donald trump", "hillary clinton", "barack obama", "bernie sanders"]
     fetched_tweets_filename = "tweets.txt"
 
     twitter_client = TwitterClient('narendramodi')
