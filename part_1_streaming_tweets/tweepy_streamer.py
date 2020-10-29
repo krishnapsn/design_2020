@@ -54,7 +54,7 @@ class StdOutListener(StreamListener):
 if __name__ == '__main__':
  
     # Authenticate using config.py and connect to Twitter Streaming API.
-    hash_tag_list = ["Trump"]
+    hash_tag_list = ["Modi"]
     fetched_tweets_filename = "tweets.txt"
 
     twitter_streamer = TwitterStreamer()
