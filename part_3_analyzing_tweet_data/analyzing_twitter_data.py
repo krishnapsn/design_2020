@@ -85,7 +85,7 @@ class TwitterListener(StreamListener):
           
     def on_error(self, status):
         if status == 420:
-            # Returning False on_data method in case rate limit occurs.
+            # Returning a False on_data method in case rate limit occurs.
             return False
         print(status)
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
  
     api = twitter_client.get_twitter_client_api()
 
-    tweets = api.user_timeline(screen_name="basedFyodor", count=20)
+    tweets = api.user_timeline(screen_name="basedFyodor", count=25)
 
     #print(dir(tweets[0]))
     print(tweets[0].retweet_count)
