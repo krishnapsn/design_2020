@@ -111,12 +111,11 @@ if __name__ == '__main__':
 
     twitter_client = TwitterClient()
     tweet_analyzer = TweetAnalyzer()
- 
     api = twitter_client.get_twitter_client_api()
 
     tweets = api.user_timeline(screen_name="basedFyodor", count=25)
 
-    #print(dir(tweets[0]))
+    print(dir(tweets[0]))
     print(tweets[0].retweet_count)
 
     df = tweet_analyzer.tweets_to_data_frame(tweets)
