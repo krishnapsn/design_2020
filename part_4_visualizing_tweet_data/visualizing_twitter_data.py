@@ -42,7 +42,6 @@ class TwitterClient():
 
 # # # # TWITTER AUTHENTICATER # # # #
 class TwitterAuthenticator():
-
     def authenticate_twitter_app(self):
         auth = OAuthHandler(twitter_credentials.CONSUMER_KEY, twitter_credentials.CONSUMER_SECRET)
         auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
@@ -150,7 +149,7 @@ if __name__ == '__main__':
     time_likes = pd.Series(data=df['likes'].values, index=df['date'])
     time_likes.plot(figsize=(16, 4), label="likes", legend=True)
 
-    time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
+    #time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
     time_retweets.plot(figsize=(16, 4), label="retweets", legend=True)
     plt.show()
 
