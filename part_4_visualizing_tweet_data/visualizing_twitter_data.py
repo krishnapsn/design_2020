@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 # # # # TWITTER CLIENT # # # #
 class TwitterClient():
     def __init__(self, twitter_user=None):
@@ -149,7 +148,7 @@ if __name__ == '__main__':
     time_likes = pd.Series(data=df['likes'].values, index=df['date'])
     time_likes.plot(figsize=(16, 4), label="likes", legend=True)
 
-    #time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
+    time_retweets = pd.Series(data=df['retweets'].values, index=df['date'])
     time_retweets.plot(figsize=(16, 4), label="retweets", legend=True)
     plt.show()
 
