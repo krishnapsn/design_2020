@@ -3,7 +3,6 @@ from tweepy import Cursor
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-
 from textblob import TextBlob
  
 import twitter_credentials
@@ -112,7 +111,6 @@ class TweetAnalyzer():
             return 0
         else:
             return -1
-
     def tweets_to_data_frame(self, tweets):
         df = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['tweets'])
 
